@@ -1,0 +1,24 @@
+/* Los div tienen por defecto la propiedad display:block porque son elementos de bloque */
+.div-1,
+.div-2 {
+  background-color: red;
+}
+
+/* Los span tienen por defecto la propiedad display:inline porque son elementos en línea */
+.span-1 {
+  background-color: aquamarine;
+  /* height: 100px;
+  display: inline-block; */
+  float: right; /* La propiedad float: right ubica el elemento a la derecha */
+}
+
+.span-2 {
+  background-color: aquamarine;
+  float: left; /* La propiedad float: left ubica el elemento a la izquierda */
+}
+
+/* Las imágenes tienen por defecto la propiedad display:inline-block, es decir que comparten propiedades tanto de un elemento en línea como de un bloque, se les puede aplicar width y height*/
+.img  {
+  width: 50px;
+  height: 50px;
+}

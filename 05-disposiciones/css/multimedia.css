@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.cabecera {
+  width: 39vw;
+  margin: 20px auto;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 24px 14px;
+  border-radius: 4px;
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.21);
+
+  /* Flexbox */
+  display: flex;
+}
+
+.imagen-principal {
+  width: 95%;
+  margin: auto;
+  opacity: 1;
+  border-radius: 4px;
+}
+
+.imagen-principal:hover {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.galeria {
+  width: 38vw;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.21);
+
+  /* Flexbox */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; /* La propiedad gap define el tamaño del espacio entre las filas y las columnas. */
+}
+
+.imagen-galeria {
+  width: 150px;
+  border-radius: 4px;
+}
+
+.imagen-galeria:hover {
+  opacity: 0.35;
+  cursor: pointer;
+}
+

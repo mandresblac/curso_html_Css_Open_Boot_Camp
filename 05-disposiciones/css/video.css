@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+}
+
+.header {
+  height: 100vh; /* Para que el elemento se centre verticalmente */
+  position: relative;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+  gap: 10px;
+
+  /* Flexbox */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

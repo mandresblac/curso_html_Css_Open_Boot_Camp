@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+</head>
+
+<body>
+    <form action="resultados.html" method="GET">
+        <div>
+            <label for="nombreusuario">Nombre de usuario</label>
+            <input type="text" id="nombreusuario" name="nombreusuario" placeholder="Escribe tu nombre" required>
+        </div>
+        <br>
+        <div>
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" placeholder="Escribe tu contraseña" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">Cual es tu Email</label>
+            <input type="email" id="email" name="email" placeholder="Escribe tu email" required>
+        </div>
+        <br>
+        <div>
+            <label for="edad">Cual es tu edad</label>
+            <input type="number" id="edad" name="edad" placeholder="Escribe tu edad" min="0" max="200" step="5">
+        </div>
+        <br>
+        <div>
+            <label for="nacimiento">Cual es tu fecha de nacimiento</label>
+            <input type="date" id="nacimiento" name="nacimiento">
+        </div>
+        <br>
+        <div>
+            <label for="comentarios">Comentarios</label>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10" style="resize: none;"
+                placeholder="Escribe un comentario"></textarea>
+        </div>
+        <br>
+        <button type="reset">Reset</button>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
