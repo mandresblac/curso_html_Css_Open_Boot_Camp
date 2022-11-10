@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 25px 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.contenedor {
+  width: 300px;
+  height: 100px;
+  background-color: aquamarine;
+  margin: 0 auto;
+  border-radius: 4px;
+  margin-bottom: 50px;
+}
+
+.frase {
+  font-style: italic;
+}
+
+/* Pseudoelemento ::before crea un pseudoelemento que es el primer hijo del elemento seleccionado. Es usado normalmente para añadir contenido estético a un elemento, usando la propiedad content. Este elemento se muestra en línea con el texto de forma predeterminada. */
+.frase::before {
+  content: "<< ";
+  font-size: xx-small;
+}
+
+/* Pseudoelemento ::after crea un pseudo-elemento que es el último hijo del elemento seleccionado. Es comunmente usado para añadir contenido cosmético a un elemento con la propiedad content.Es en linea (inline) de forma predeterminada. */
+.frase::after {
+  content: " >>";
+  font-size: xx-small;
+}
+
+.libro {
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  background-color: bisque;
+  margin: 0 auto;
+  border-radius: 4px;
+  margin-bottom: 50px;
+}
+
+/* El pseudo-elemento ::first-letter aplica estilos a la primera letra de la primera línea un elemento de bloque, sólo cuando no es precedido de otro contenido (como imágenes o tablas). */
+.libro p::first-letter {
+  font-size: xx-large;
+}
+
+/* El Pseudoelemento ::first-line aplica estilos a la primera línea de un elemento de bloque. */
+.libro p::first-line {
+  color: orange;
+}
+
+/* El pseudoelemento ::selection coincide con la parte de un elemento que selecciona un usuario. Las siguientes propiedades CSS se pueden aplicar a ::selection: color, background, cursory outline. */
+.libro p::selection {
+  background-color: chocolate;
+  color: lime;
+}
+
+.listado {
+  width: 300px;
+  height: 200px;
+  background-color: lightblue;
+  margin: 0 auto;
+  border-radius: 4px;
+  margin-bottom: 50px;
+
+  /* Flexbox */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.listado li {
+  width: 100px;
+}
+
+/* El pseudo-elemento ::marker en CSS selecciona la caja de marcadores de un elemento de la lista, que normalmente contiene una viñeta o un número. Funciona en cualquier elemento o pseudo-elemento configurado para display: list-item, como el elemento <li> y <summary> */
+.listado ul li::marker {
+  color: red;
+}
+
+.listado ol li::marker {
+  color: green;
+}

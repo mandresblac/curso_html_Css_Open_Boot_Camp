@@ -41,7 +41,7 @@ h2 {
   margin-bottom: 50px;
 }
 
-/* La pseudoclase :first-child hace referencia al pimer hijo, en este caso le estamos diciendo a CSS que afecte al elemento p que sea el primer hijo de la clase .listado */
+/* La pseudoclase :first-child hace referencia al primer hijo, en este caso le estamos diciendo a CSS que afecte al elemento p que sea el primer hijo de la clase .listado */
 .listado p:first-child {
   color: red;
   font-size: 20px;
@@ -53,8 +53,7 @@ h2 {
 }
 
 a {
-  display: block;
-  /* Convertimos a elementos de bloque (block) los en laces a */
+  display: block; /* Convertimos los enlaces "a" en elementos de bloque (block) */
   text-align: center;
 }
 
