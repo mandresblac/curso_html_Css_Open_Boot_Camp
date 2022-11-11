@@ -10,12 +10,14 @@
 
 .container {
   margin: auto;
+  gap: 20px;
+  width: 450px;
+
+  /* Flexbox */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  width: 450px;
 }
 
 .buttons {
@@ -47,6 +49,8 @@
   height: 35px;
   background-color: white;
   border-radius: 2px;
+
+  /* Flexbox */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,9 +87,11 @@
 /* -----------ESTILOS DEL SEPARADOR  ------------- */
 
 .separator {
-  display: flex;
   width: 100%;
   gap: 15px;
+
+  /* Flexbox */
+  display: flex;
 }
 
 .separator hr {
@@ -101,22 +107,28 @@
 /* --------------- ESTILOS DEL FORMULARIO ----------------- */
 
 form {
+  gap: 30px;
+
+  /* Flexbox */
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 30px;
 }
 
 .sections-inputs {
-  display: flex;
   gap: 10px;
   width: 100%;
+
+  /* Flexbox */
+  display: flex;
 }
 
 label {
+  gap: 5px;
+
+  /* Flexbox */
   display: flex;
   flex-direction: column;
-  gap: 5px;
 }
 
 label span {
