@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+/* --------------- NIVELES DE ESPECIFICIDAD ------------------- */
+/* La especificidad es el peso que tiene un selector cuando hay conflicto de estilos y se calcula de la siguiente forma. 
+
+Etiquetas y pseudoelementos ----------- 0,0,0,1 
+Clases,atributos y pseudoclases ------- 0,0,1,0 
+Identificadores (id) ------------------ 0,1,0,0 
+Estilos en línea ---------------------- 1,0,0,0
+palabra !important -------------------- Rompe la especificidad (Esta por encima de todo)
+*/
+
+#h1-id.h1-clase {
+  color: magenta;
+}
+
+.h1-clase {
+  color: yellow;
+}
+
+h1 {
+  color: blue !important;/* Evitar en la medida de lo posible la utilización de !important */
+}
+
+
+p {
+  color: red;
+}
+
+
