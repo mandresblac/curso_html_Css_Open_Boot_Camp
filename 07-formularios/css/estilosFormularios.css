@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form {
+  width: 30vw;
+  background-color: lightblue;
+  margin: 50px auto;
+  padding: 15px 0 ;
+  border-radius: 5px;
+
+  /* Flexbox */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  width: 25vw;
+  padding: 2px 5px;
+  margin: 10px 0;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  color: #5f5f5f;
+  outline: none;/* Para que no aparezca el marco o contorno alrededor del input cuando se seleccione o se haga focus sobre él */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Selector de tipo */
+input[type="password"] {
+  color: red;
+}
+
+.input:focus {
+  border: 1.35px solid rgba(0, 0, 0, 0.9);
+}
+
+/* Pseudoelemento ::placeholder */
+.input::placeholder {
+  color: #c2c2c2;
+}
+
+.input-background {
+  background-color:  aquamarine;
+}
+
+textarea {
+  resize: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+textarea:focus {
+  border: 1.35px solid rgba(0, 0, 0, 0.9);
+}
+
+select {
+  margin: 20px 0 5px;
+  padding: 7px;
+  background-color: #ccc;
+}
