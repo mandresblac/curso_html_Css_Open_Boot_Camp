@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Altura minima que necesita el body para poder centrar el elemento hijo que contiene, que en este caso es un elemento button */
+}
+
+.btn-tooltip {
+  position: relative;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-size: 25px;
+  border: none;
+  background-color: green;
+  color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: background-color 150ms;
+}
+
+.btn-tooltip:hover {
+  background-color: rgb(1, 98, 1);
+}
+
+/* .btn-tooltip:hover::before {
+  content: "Esto es un tooltip";
+} */
+
+.tooltip {
+  position: absolute;
+  width: 280px;
+  font-size: 25px;
+  opacity: 0;/* Ocultamos el elemento */
+  top: -85px;
+  left: -80px;
+  color: #ddd;
+  background-color: #333;
+  padding: 5px 10px;
+  border-radius: 7px;
+  transition: opacity 150ms;
+}
+
+.btn-tooltip:hover .tooltip {
+  opacity: 100%; /* Hacemos visible el elemento */
+}
+
+/* ------ TRIANGULO ------- */
+
+.tooltip::before {
+  content: "";
+  
+  /* Creamos el triangulo */
+  border: 17px solid transparent;
+  border-top-color: #333;
+  
+  /* Posicionamos el triangulo */
+  position: absolute;
+  top: 68px;
+  left: 50%;
+  transform: translateX(-70%);
+}

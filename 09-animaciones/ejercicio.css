@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Altura minima que necesita el body para poder centrar el elemento hijo que contiene, que en este caso es un elemento button */
+}
+
+.btn-modern {
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+  border-radius: 9px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+}
+
+.btn-modern:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+  background-color: #dadada;
+  color: rgba(210, 98, 61, 0.921);
+  cursor: pointer;
+}
