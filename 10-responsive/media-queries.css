@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: red;
+  font-size: 4rem;
+}
+
+p {
+  color: black;
+  font-size: 2rem;
+}
+
+
+/* ---------- MEDIAQUERIES - RESPONSIVE WEB DESIGN ---------- */
+
+
+/* Hasta 576 pixeles sera green, de ahi para abajo cambiara al color red que es el que esta configurado en la línea 8 */
+@media (min-width: 576px) {
+  h1 {
+    color: green;
+  }
+}
+
+/* Hasta 995 pixeles sera blue, de ahí para abajo cambiara al color green */
+@media (min-width: 995px) {
+  h1 {
+    color: blue;
+  }
+}
+
+/* Hasta 300 pixeles sera cyan, de ahí para abajo cambiara al color black */
+@media (min-height: 300px) {
+  p {
+    color: cyan;
+  }
+}
+
+/* landscape(horizontal) */
+@media (orientation: landscape) {
+  p{
+    color: brown;
+  }
+}
