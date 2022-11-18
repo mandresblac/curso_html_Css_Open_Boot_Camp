@@ -24,11 +24,59 @@
         <input type="text" class="form-control">
       </div>
 
-      <label for="email">Introduce tu email</label>
+      <label for="email-2">Introduce tu email</label>
       <div class="input-group w-50">
+        <input id="email-2" type="text" class="form-control" placeholder="Username">
+        <span class="input-group-text">@gmail.com</span>
+      </div>
+
+      <label for="email">Introduce tu email</label>
+      <div class="input-group input-group-lg w-100 flex-nowrap">
         <input id="email" type="text" class="form-control" placeholder="Username">
         <span class="input-group-text">@gmail.com</span>
       </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-text">
+          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+        </div>
+        <input type="text" class="form-control" aria-label="Text input with checkbox">
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-text">
+          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+        </div>
+        <input type="text" class="form-control" name="Nombre" placeholder="Tu nombre">
+        <input type="text" class="form-control" name="Apellido" placeholder="Tu apellido">
+      </div>
+
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Haz tu búsqueda">
+        <button class="btn btn-outline-primary">Buscar</button>
+      </div>
+
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Haz tu búsqueda">
+        <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">Elige tu
+          buscador</button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Google</a></li>
+          <li><a class="dropdown-item" href="#">Bing</a></li>
+          <li><a class="dropdown-item" href="#">Yahoo</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Presearch</a></li>
+        </ul>
+      </div>
+
+      <div class="form-floating mb-3 mt-3">
+        <input type="text" class="form-control" id="text-nombre" placeholder="Tu nombre">
+        <label for="text-nombre">Escribe tu nombre</label>
+      </div>
+
     </form>
   </div>
 
