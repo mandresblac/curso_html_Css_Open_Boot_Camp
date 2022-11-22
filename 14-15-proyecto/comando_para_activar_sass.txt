@@ -1,0 +1,5 @@
+Comando para activar seguimineto de SASS
+
+sass --watch sass/index.scss css/styles.css
+
+OJO: Antes de ejecutar este comando hay que estar ubicado en la carpeta del proyecto, que en este caso es 14-15-Proyecto
